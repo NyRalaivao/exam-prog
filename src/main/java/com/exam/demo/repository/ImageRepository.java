@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ImageRepository extends JpaRepository<ImageEntity, UUID> {
-    @Query("SELECT i FROM ImageEntity i ORDER BY i.dateCreation DESC")
-    List<ImageEntity> findAllOrderByDateCreationDesc();
+  @Query("SELECT i FROM ImageEntity i ORDER BY i.dateCreation DESC")
+  List<ImageEntity> findAllOrderByDateCreationDesc();
+
+  void save(ImageEntity entity);
 }
