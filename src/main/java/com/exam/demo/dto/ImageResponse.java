@@ -10,9 +10,9 @@ import lombok.Data;
 @Builder
 @AllArgsConstructor
 public class ImageResponse {
-    private UUID id;
-    private String nomFichier;
-    private String email;
-    private LocalDateTime dateCreation;
-    private String url;
+  private UUID id;
+  private String nomFichier;
+  private String email;
+  private LocalDateTime dateCreation;
+  private String url;
 }
